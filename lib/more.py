@@ -3,35 +3,24 @@
 import shutil
 import time
 import os
-import sys
-import json
-import requests
-
-
 columns = shutil.get_terminal_size().columns
 
-def psb(z):
-    for p in z + "\n":
-        sys.stdout.write(p)
-        sys.stdout.flush()
-        time.sleep(0.02)
-
-
-##Logo##
+#Logo
 def logo():
     os.system("clear")
-    print("\033[94m┌────────────────────────────────────────┐".center(columns+4))
-    print("\033[94m│           \033[92m▌  ▗    ▌       ▌ ▌\033[94m          │".center(columns+14))
-    print("\033[94m│           \033[92m▌  ▄ ▛▀▖▌▗▘ ▄▄▖ ▝▞ \033[94m          │".center(columns+14))
-    print("\033[94m│           \033[92m▌  ▐ ▌ ▌▛▚      ▞▝▖\033[94m          │".center(columns+14))
-    print("\033[94m│           \033[92m▀▀▘▀▘▘ ▘▘ ▘     ▘ ▘\033[94m          │".center(columns+14))
-    print("\033[94m│                              \033[94m          │".center(columns+8))
-    print("\033[94m│ \033[95mAuthor : ToxicSabbir                   \033[94m│".center(columns+14))
-    print("│ \033[95mTool   : Hack With Link                \033[94m│".center(columns+8))
-    print("│ \033[95mGitHub : http://gituub.com/Toxic-Sabbir\033[94m│".center(columns+8))
-    print("│ \033[95mCoder  : Sabbir                  \033[37mV1.1  \033[94m│".center(columns+14))
-    print("\033[94m└────────────────────────────────────────┘".center(columns+4))
+    print("\33[94m┌────────────────────────────────────────┐".center(columns+5))
+    print("\33[94m│            \33[92m▞▀▖▞▀▖▛▀▖▛▀▖▜▘▛▀▖ \33[94m          │".center(columns+15))
+    print("\33[94m│            \33[92m▚▄ ▙▄▌▙▄▘▙▄▘▐ ▙▄▘ \33[94m          │".center(columns+15))
+    print("\33[94m│            \33[92m▖ ▌▌ ▌▌ ▌▌ ▌▐ ▌▚  \33[94m          │".center(columns+15))
+    print("\33[94m│            \33[92m▝▀ ▘ ▘▀▀ ▀▀ ▀▘▘ ▘ \33[94m          │".center(columns+15))
+    print("\33[94m│                              \33[94m          │".center(columns+9))
+    print("\33[94m│ \33[95mAuthor : ToxicSabbir                   \33[94m│".center(columns+15))
+    print("│ \33[95mTool   : Hack With Link                \33[94m│".center(columns+9))
+    print("│ \33[95mGitHub : http://gitub.com/Toxic-Sabbir \33[94m│".center(columns+9))
+    print("│ \33[95mCoder  : S4B81R                        \33[94m│".center(columns+9))
+    print("\33[94m└────────────────────────────────────────┘".center(columns+5))
 
+logo()
 #SavingData#
 def save_data(data):
     file = open(".server/upload/data.json", "r").read()
