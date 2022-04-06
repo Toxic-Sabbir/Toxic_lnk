@@ -20,7 +20,6 @@ def logo():
     print("│ \33[95mCoder  : S4B81R                        \33[94m│".center(columns+9))
     print("\33[94m└────────────────────────────────────────┘".center(columns+5))
 
-logo()
 #SavingData#
 def save_data(data):
     file = open(".server/upload/data.json", "r").read()
