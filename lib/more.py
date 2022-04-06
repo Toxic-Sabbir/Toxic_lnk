@@ -145,7 +145,7 @@ def update():
     try:
         tool_ver = open("lib/.version", "r").read()
     except:
-        tool_ver = "ToxicNoob"
+        tool_ver = "ToxicSabbir"
     chk()
     main_ver = chk.ver
     
